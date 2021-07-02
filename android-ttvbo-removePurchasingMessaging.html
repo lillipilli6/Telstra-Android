@@ -23,7 +23,7 @@ HTML, body {
     height: 450px;
     margin: 0 auto;
     padding: 30px;
-    margin-top: 10%;
+    margin-top: 20%;
     border: 1px solid rgb(29, 29, 29);
     position: relative;
 }
@@ -55,25 +55,33 @@ img {
     border: none;
     border-radius: 4px;
     font-size: 14px;
-    font-family: Roboto-Bold;
+    font-weight: 700;
     text-align: centre;
     width: 250px;
     position: absolute;
     bottom: 30px;
     text-align: center;
 }
+@media only screen and (min-device-width: 600px) 
+and (orientation: landscape){
+  .main {
+    margin-top: 5%;
+}
+}
     </style>
 </head>
 <body>
-    <div class="main"> 
-        <img class="logo" style="width: 60px;height:59px;" src="http://media.telstra.com.au/content/dam/homepage/images/hosting/ttv/logo-ttv.png" />
-        <h1>We no longer offer in-app purchasing on mobile devices.</h1>
-        <p>You can still access your purchased Telstra TV Box Office <br>content in the library.</p>
-        <p>To buy or rent content use a Telsra TV, supported smart TV or <strong>telstratv.com/boxoffice</strong></p>
-        <div>
-        <a href="adbinapp://cancel">
-            <button class="close-button">Close</button></a>
-    </div>
+    <section class="viewport">   
+        <div class="main"> 
+
+            <img class="logo" style="width: 60px;height:59px;" src="http://media.telstra.com.au/content/dam/homepage/images/hosting/ttv/logo-ttv.png" />
+            <h1>We no longer offer in-app purchasing on mobile devices.</h1>
+            <p>You can still access your purchased Telstra TV Box Office <br>content in the library.</p>
+            <p>To buy or rent content use a Telsra TV, supported smart TV or <strong>telstratv.com/boxoffice</strong></p>
+            <div>
+            <a href="adbinapp://cancel">
+                <button class="close-button">Close</button></a>
+        </div></section>
 </body>
 </html>
 
